@@ -29,6 +29,7 @@ SECRET_KEY = 'django-insecure-d3fi922%%+c)dyczo*65((6dxk&+$tmhx%7zqx(&kq@6@#lirr
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ['https://library-web-2-0-1.onrender.com','https://*.127.0.0.1']
 # ALLOWED_HOSTS = ['library-web-2-0.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
