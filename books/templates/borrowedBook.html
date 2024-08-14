@@ -33,10 +33,10 @@
             </td>
             <td>{{request.user.first_name}} {{request.user.last_name}}</td>
             <td>{{ borrowed_book.user.user.email }}</td>
-            <td>{{ borrowed_book.book.borrowing_price }}</td>
+            <td>{{ borrowed_book.book.borrowing_price }}$</td>
             <td>{{ borrowed_book.created_on|date:"jS F Y" }}</td>
             <th>
-                <a href="{% url 'return_book' borrowed_book.id %}" class="btn btn-error btn-xs">Return Book</a>
+                <a style="font-weight: bold;color:gold;" href="{% url 'return_book' borrowed_book.id %}" class="btn btn-error btn-xs">Return Book</a>
             </th>
         </tr>
       {% endfor %}
